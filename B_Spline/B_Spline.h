@@ -11,19 +11,19 @@ private:
    ofstream psFile;
 
 public:
-    /*--- 생성자 ---*/
+    /*--- constructor ---*/
     B_Spline();
-    /*--- 소멸자 ---*/
+    /*--- destructor ---*/
     ~B_Spline();
 
-    /*--- 1차원 변수 ---*/
-    int Degree;
-    int Number_of_CP;
-	int Number_of_Knots;
+    /*--- Variable ---*/
+    int Degree = 0;
+    int Number_of_CP = 0;
+	int Number_of_Knots = 0;
 
-    double *CP;
-	double* Knots;
+    double *CP = nullptr;
+	double* Knots = nullptr;
 
-    /*--- 함수 ---*/
-    void saveData(); //파일 열기 및 InputData 저장
+    /*--- Function ---*/
+    void saveData();
 };

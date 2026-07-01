@@ -10,11 +10,9 @@ using namespace std;
 
 B_Spline::B_Spline()
 {
-    /*--- 입력 Data ---*/
+    /*--- Input Data ---*/
     Degree = 3;
     Number_of_CP = Degree + 2;
-    CP = nullptr;
-	Knots = nullptr;
 }
 
 B_Spline::~B_Spline()
@@ -24,15 +22,15 @@ B_Spline::~B_Spline()
 
 void B_Spline::saveData()
 {
-	/*--- CP.txt 파일 열기 ---*/
+	/*--- CP.txt File Open ---*/
     readFile.open("CP.txt");
     if (!readFile)
     {
         cout << "This CP.txt file can't Open" << endl;
     }
-    /*--- CP 넣어줄 공간 동적 할당 ---*/
+    /*--- Dynamic allocation CP ---*/
     CP = new double[Number_of_CP];
-    /*--- CP Data 저장 ---*/
+    /*--- Save CP Data ---*/
     cout << "===== CP =====" << endl;
     for (int i = 0; i < Number_of_CP; i++)
     {
@@ -41,17 +39,17 @@ void B_Spline::saveData()
     }
     readFile.close();
 
-	/*--- Knots.txt 파일 열기 ---*/
+	/*--- Knots.txt File Open ---*/
     readFile.open("Knots.txt");
     if (!readFile)
     {
         cout << "This Knots.txt file can't Open" << endl;
     }
-	/*--- Knot의 개수 저장 ---*/
+	/*--- Save Number of Knots ---*/
 	readFile >> Number_of_Knots;
 	cout << "===== Number of Knots =====" << endl;
 	cout << Number_of_Knots << endl;
-	/*--- Knots 넣어줄 공간 동적 할당 ---*/
+	/*--- Dynamic allocation Knots ---*/
 	Knots = new double[Number_of_Knots];
 	cout << "===== Knots =====" << endl;
 	for (int i = 0; i < Number_of_Knots; i++)

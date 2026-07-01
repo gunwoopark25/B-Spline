@@ -6,9 +6,11 @@
 
 using namespace std;
 
-void main()
+int main()
 {
     B_Spline B;
 
     B.saveData();
+
+    return 0;
 }
