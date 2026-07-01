@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "B_Spline Debug (x64)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/B_Spline/x64/Debug/B_Spline.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/B_Spline",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build B_Spline (x64 Debug)"
+        }
+    ]
+}
