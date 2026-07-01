@@ -92,4 +92,15 @@ void B_Spline::define_u()
         u[0][i] = Knots[i];
         cout << u[0][i] << endl;
     }
+
+    
+}
+
+void B_Spline::de_boor_algorithm()
+{
+    /*--- k = 1 ---*/
+    for (int i = 1; i < Number_of_CP; i++)
+    {
+        
+    }
 }

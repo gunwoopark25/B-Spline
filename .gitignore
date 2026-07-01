@@ -361,3 +361,19 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+###############################################################################
+# Project-specific (B_Spline)
+###############################################################################
+
+# Standalone build output: our VS Code tasks compile with cl.exe directly
+# into the project folder instead of Debug/Release subfolders
+*.exe
+
+# CMake build output
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+_deps/
