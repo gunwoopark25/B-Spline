@@ -11,6 +11,8 @@ int main()
     B_Spline B;
 
     B.saveData();
+    B.define_d();
+    B.define_u();
 
     return 0;
 }
