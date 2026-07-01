@@ -31,5 +31,4 @@ public:
     void saveData();
     void define_d();
     void define_u();
-    void de_boor_algorithm();
 };
