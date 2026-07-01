@@ -22,8 +22,13 @@ public:
 	int Number_of_Knots = 0;
 
     double *CP = nullptr;
-	double* Knots = nullptr;
+	double *Knots = nullptr;
+
+    double **d = nullptr;
+    double **u = nullptr;
 
     /*--- Function ---*/
     void saveData();
+    void define_d();
+    void define_u();
 };

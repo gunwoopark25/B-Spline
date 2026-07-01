@@ -3,6 +3,6 @@
 
 struct Point2D
 {
-    double x;
-    double y;
+    double k;
+    double i;
 };

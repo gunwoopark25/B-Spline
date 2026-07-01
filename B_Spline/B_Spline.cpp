@@ -60,3 +60,36 @@ void B_Spline::saveData()
     readFile.close();
 }
 
+void B_Spline::define_d()
+{
+    /*--- Dynamic allocation Matrix d ---*/
+    d = new double*[Degree + 1];
+    for (int k = 0; k <= Degree; k++)
+    {
+        d[k] = new double[Degree + Number_of_CP];
+    }
+    /*--- Save CP Data to Matrix d ---*/
+    cout << "==== Matrix d at k = 0 ====" << endl;
+    for (int i = 0; i < Number_of_CP; i++)
+    {
+        d[0][i] = CP[i];
+        cout << d[0][i] << endl;
+    }
+}
+
+void B_Spline::define_u()
+{
+    /*--- Dynamic allocation Matrix u ---*/
+    u = new double* [Degree + 1];
+    for (int k = 0; k <= Degree; k++)
+    {
+        u[k] = new double[Degree + Number_of_Knots];
+    }
+    /*--- Save CP Data to Matrix u ---*/
+    cout << "==== Matrix u at k = 0 ====" << endl;
+    for (int i = 0; i < Number_of_Knots; i++)
+    {
+        u[0][i] = Knots[i];
+        cout << u[0][i] << endl;
+    }
+}
