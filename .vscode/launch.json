@@ -2,7 +2,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "B_Spline Debug (x64)",
+            "name": "B_Spline Debug (macOS, clang++)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/B_Spline/B_Spline",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/B_Spline",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Build B_Spline (macOS, clang++)"
+        },
+        {
+            "name": "B_Spline Debug (Windows, x64)",
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}/B_Spline/x64/Debug/B_Spline.exe",

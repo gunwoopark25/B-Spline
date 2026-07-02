@@ -93,12 +93,3 @@ void B_Spline::define_u()
         cout << u[0][i] << endl;
     }
 }
-
-void B_Spline::de_boor_algorithm()
-{
-    /*--- k = 1 ---*/
-    for (int i = 1; i < Number_of_CP; i++)
-    {
-        
-    }
-}

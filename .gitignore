@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# macOS clang++ build output (VS Code task)
+/B_Spline/B_Spline
+/B_Spline/B_Spline.dSYM/
+
 # User-specific files
 *.rsuser
 *.suo
