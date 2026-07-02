@@ -93,3 +93,8 @@ void B_Spline::define_u()
         cout << u[0][i] << endl;
     }
 }
+
+void B_Spline::de_boor_algorithm()
+{
+    
+}

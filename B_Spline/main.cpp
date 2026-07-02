@@ -13,6 +13,7 @@ int main()
     B.saveData();
     B.define_d();
     B.define_u();
+    B.de_boor_algorithm();
 
     return 0;
 }
